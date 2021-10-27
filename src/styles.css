@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --brandBg: #f1ede9;
+  --brandTextColor: #000000;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;900&display=swap");
+
+body {
+  background-color: var(--brandBg);
+  font-family: "Montserrat", sans-serif;
+  color: var(--brandTextColor);
+}
+
+* {
+  outline: none;
+}
+/* Navigation */
+header {
+  margin: 10px 0 20px 0;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 9px 12px;
+}
+
+header .active-link {
+  font-weight: 600;
+}
+
+.nav-link {
+  color: var(--brandTextColor) !important;
+}
+
+.logo-image {
+  transition: all 0.7s ease-in-out;
+  display: inline-block;
+  height: 80px;
+  width: 55px;
+  background: url("/assets/images/experiments.svg") no-repeat left;
+  background-size: 50px;
+}
+
+.logo h1 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  display: inline-block;
+}
+
+.logo:hover .logo-image {
+  transform: scale(1.2);
+}
+
+.logo:hover .logo-image img {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.centering-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

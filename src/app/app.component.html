@@ -1,0 +1,56 @@
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-4 logo centering-block">
+        <span class="logo-image"></span>
+        <h1>EXperiments</h1>
+      </div>
+      <div class="col-12 col-md-8 centering-block">
+        <ul class="nav">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              aria-current="page"
+              routerLink=""
+              routerLinkActive="active-link"
+              [routerLinkActiveOptions]="{ exact: true }"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="/datafetch"
+              routerLinkActive="active-link"
+              >Data Fetch</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="/coin"
+              routerLinkActive="active-link"
+              >Coin Data</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="/invoice"
+              routerLinkActive="active-link"
+              >Invoice</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Router outlet -->
+<section class="container">
+  <div class="row">
+    <div class="col-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</section>
